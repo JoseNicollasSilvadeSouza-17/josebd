@@ -1,0 +1,37 @@
+{
+	"name": "josebd",
+	"version": "1.0.0",
+	"description": "JoséBD, also called ZéBD, is a simple NoSQL database of the Document type that uses JSON files.",
+	"main": "src/index.ts",
+	"scripts": {
+		"dev": "npx tsx src/index.ts"
+	},
+	"keywords": [
+		"JoséBD",
+		"ZéBD",
+		"Database",
+		"NoSQL Documents",
+		"JSON"
+	],
+	"author": {
+		"name": "José Nícollas Silva de Souza",
+		"email": "josenicollassilvadesouza@gmail.com"
+	},
+	"license": "MIT",
+	"type": "module",
+	"dependencies": {
+		"zod": "^4.4.3"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@eslint/json": "^2.0.0",
+		"@eslint/markdown": "^8.0.2",
+		"@types/node": "^26.0.0",
+		"eslint": "^10.5.0",
+		"globals": "^17.6.0",
+		"prettier": "^3.8.4",
+		"tsx": "^4.22.4",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.61.1"
+	}
+}
