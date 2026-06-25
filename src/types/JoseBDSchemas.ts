@@ -1,4 +1,5 @@
 import z from "zod";
+import type { JsonValue, JsonObject } from "type-fest";
 
 const keySchema = z
 	.string()
@@ -9,9 +10,7 @@ const literalSchema = z.union([z.string(), z.number(), z.boolean(), z.null()]);
 type Literal = z.infer<typeof literalSchema>;
 type Key = z.infer<typeof keySchema>;
 
-type Json = Literal | { [key: Key]: Json } | Json[];
-
-const jsonSchema: z.ZodType<Json> = z.lazy(() => {
+const jsonSchema: z.ZodType<JsonValue> = z.lazy(() => {
 	return z.union([
 		literalSchema,
 		z.record(keySchema, jsonSchema),
@@ -19,6 +18,6 @@ const jsonSchema: z.ZodType<Json> = z.lazy(() => {
 	]);
 });
 
-const recordJsonSchema = z.record(keySchema, jsonSchema);
+const recordJsonSchema: z.ZodType<JsonObject> = z.record(keySchema, jsonSchema);
 
 export { recordJsonSchema };
