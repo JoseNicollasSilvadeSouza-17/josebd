@@ -7,6 +7,7 @@
 ![TypeScrit](https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/Node.js-5FA04E.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Zod](https://img.shields.io/badge/Zod-408AFF.svg?style=for-the-badge&logo=Zod&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000.svg?style=for-the-badge&logo=JSON&logoColor=white)
 
 **JoséBD** (also known as **ZéBD**) is a lightweight, document-oriented NoSQL database that stores data natively in JSON files. Developed in Brazil, it was designed for simplicity and efficiency in small-scale applications, making it perfect for mock servers, local prototyping, or quick implementations with RESTful APIs, GraphQL, and tRPC.
 
